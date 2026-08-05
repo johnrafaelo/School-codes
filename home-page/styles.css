@@ -22,13 +22,13 @@ body {
 /* LAPTOPS */
 @media (min-width: 1024px) and (max-width: 1439px) {
   body {
-    zoom: 3;
+    zoom: 2.5;
   }
 }
 /* DESKTOP */
 @media (min-width: 1440px) {
   body {
-    zoom: 4;
+    zoom: 3;
   }
 }
 
