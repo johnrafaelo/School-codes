@@ -1,26 +1,94 @@
+/* ---------- VARIABLE/S ---------- */
+:root {
+  --lightlightgray: #fcfcfc;
+}
+/* ---------- GENERAL ---------- */
 body {
 	font-family: arial, sans-serif;
 }
 
+/* PHONES */
+@media (max-width: 767px) {
+  body {
+    zoom: 1;
+  }
+}
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    zoom: 2;
+  }
+}
+/* LAPTOPS */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    zoom: 3;
+  }
+}
+/* DESKTOP */
+@media (min-width: 1440px) {
+  body {
+    zoom: 4;
+  }
+}
+
+/* ---------- HEADER PART ---------- */
 header {
 	background-color: lightskyblue;
+  
 	border-radius: 10px;
+  
 	padding: 10px;
 }
 .header-text {
 	color: lightgoldenrodyellow;
 }
-
+/* ---------- UNSORTED LIST PART ---------- */
 nav ul {
 	list-style: none;
+  
 	padding: 0;
 }
-nav ul li a {
-		color: royalblue;
-		font-weight: 600;
+nav ul li a,
+nav ul li button {
+  color: royalblue;
+  
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.3px;
+  
+  background: none;
+  
+  border: none;
+  
+  padding: 0;
+  margin: 0;
+  
+  cursor: pointer;
+}
+#menu-button {
+  anchor-name: --members-button;
 }
 
-/* div */
+/* ---------- SIDEBAR PART ---------- */
+#menu {
+  border: 3px solid gray;
+  border-radius: 0 20px 20px 0;
+  
+  background-color: var(--lightlightgray);
+  
+  position: fixed;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+
+  width: 50%;
+
+  z-index: 10;
+}
+
+/* ---------- MEMBERS IMAGES ---------- */
 .members {
 	display: flex;
 	gap: 2px;
@@ -29,8 +97,11 @@ nav ul li a {
 .members div {
 	height: 200px;
 	width: 70px;
+  
 	transition: 0.4s;
+  
 	position: relative;
+  
   overflow: hidden;
 }
 .members div:hover {
@@ -39,17 +110,22 @@ nav ul li a {
 .members img{
   height: 200px;
 	width: 70px;
+  
 	transition: 0.4s;
+  
 	border-radius: 5px;
+  
 	filter: grayscale(60%);
 	opacity: 90%;
 }
 .members img:hover {
 	width: 150px;
+  
 	filter: grayscale(0%);
 	opacity: 100%;
 }
-.members img:active, .members div:active {
+.members img:active,
+.members div:active {
 	.name {
 		opacity: 1;
 	}
@@ -57,29 +133,40 @@ nav ul li a {
 .name {
 	display: flex;
 	flex-direction: column;
+  
 	margin: 0;
 	padding-bottom: 0px;
+  
 	font-weight: 600;
+  
 	position: absolute;
 	bottom: 0px;
+  
   pointer-events: none;
+  
   height: 50px;
   width: 150px;
+  
   opacity: 0;
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(0,0,0));
+  
   color: white;
   text-wrap: nowrap;
   font-size: 70%;
   font-weight: 600;
+  
   align-items: center;
+  
   transition: 0.5s;
 }
 .role {
 	margin-top: 2px;
 }
 
+/* ---------- FOOTER PART ---------- */
 footer {
 	background-color: lightgoldenrodyellow;
+  
 	padding: 10px;
 }
 footer p {
