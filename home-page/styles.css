@@ -67,12 +67,9 @@ nav ul li button {
   
   cursor: pointer;
 }
-#menu-button {
-  anchor-name: --members-button;
-}
 
 /* ---------- SIDEBAR PART ---------- */
-#menu {
+#Sidebar {
   border: 3px solid gray;
   border-radius: 0 20px 20px 0;
   
@@ -81,11 +78,27 @@ nav ul li button {
   position: fixed;
   top: -3px;
   bottom: -3px;
-  left: -3px;
+  left: -52%; /* 3px normal */
 
   width: 50%;
 
   z-index: 10;
+
+  transition: 0.4s;
+}
+.back-button {
+  background: none;
+  
+  border: none;
+
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  
+  padding: 0;
+  margin: 0;
+  
+  cursor: pointer;
 }
 
 /* ---------- MEMBERS IMAGES ---------- */
