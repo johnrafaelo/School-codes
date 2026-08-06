@@ -7,29 +7,45 @@
   
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
+  <script src="script.js" defer></script>
+  
 </head>
 <body>
-
-<script src="script.js"></script>
-
 <header>
   <h1 class="header-text">Four-Real</h1>
   <p class="header-text">Welcome to our webpage</p>
   <nav>
     <ul class="header-list1">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><button id="menu-button">Members</button></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <button onclick="ShowSidebar()">Members</button>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <aside id="menu" hidden>
-    <a href="members.txt"><img src="images/pogi.jpg" alt="Rafael's sidebar" width="30px"></a>
+  <aside id="Sidebar">
+    <button onclick="HideSidebar()" class="back-button">
+      <img src="images/back-icon.png" alt="Back Icon">
+    </button>
+    <div>
+      <a href="members.txt">
+        <img src="images/pogi.jpg" alt="Rafael's sidebar" width="30px">
+      </a>
+    </div>
   </aside>
   
   <section>
