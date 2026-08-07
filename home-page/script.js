@@ -5,4 +5,4 @@ function ShowSidebar() {
 };
 function HideSidebar() {
   Sidebar.style.left = "-52%";
-};
+}; 
