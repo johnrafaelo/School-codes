@@ -1,0 +1,105 @@
+/* ---------- GENERAL ---------- */
+body {
+  font-family: Arial;
+
+  zoom: 0.8;
+}
+
+/* ----- Phones ----- */
+@media (max-width: 767px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+/* ----- Tablet ----- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    zoom: 1.8;
+  }
+}
+
+/* ----- Laptop and Desktops ----- */
+@media (min-width: 1024px) {
+  body {
+    zoom: 2.5;
+  }
+}
+
+/* ---------- HOME BUTTONB ---------- */
+aside {
+  background-color: lightblue;
+
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-button-img {
+    width:32px;
+    height: 32px;
+  }
+}
+
+/* ---------- HEADER PART ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #96deff;
+
+  border-radius: 4px;
+
+  padding-top: 6px;
+  padding-bottom: 0;
+  padding-left: 6px;
+
+  width: 100%;
+
+  box-shadow: 2px 2px 4px 4px hwb(182 16% 0% / 0.16470588235294117);
+  
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-wrap: nowrap;
+
+    img {
+      height: 40px;
+      
+      border-radius: 50%;
+
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+/* ---------- FOOTER PART ---------- */
+footer {
+  background-color: hwb(267 28% 0% / 0.5098039215686274);
+  color: gray;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+
+  box-shadow: 2px 2px 2px 1px pink;
+
+  p span {
+    color: gold;
+  }
+}
